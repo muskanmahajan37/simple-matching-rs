@@ -24,3 +24,13 @@ fn if_true_and_not_20_to_26() {
     (_,_) => { println!("True or False and not between 20-26"); }
   }
 }
+
+#[test]
+fn if_true_or_false_and_40_to_49() {
+  let pair = (51i, true);
+
+  match pair {
+    (40..49, _) => { println!("True or False and between 40-49"); }
+    (_,_) => { println!("True or False and not between 40-49"); }
+  }
+}
